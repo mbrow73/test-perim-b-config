@@ -1,11 +1,8 @@
-ingress_policies = [
+ingress_policies = []
+egress_policies  = [
   {
     from = {
       identity_type = ""
-      sources = {
-        resources = ["projects/82736345"]
-        access_levels = []
-      }
       identities = ["serviceAccount:svc-my-app@my-project.iam.gserviceaccount.com"]
     }
     to = {
@@ -19,4 +16,3 @@ ingress_policies = [
     }
   },
 ]
-egress_policies  = []
